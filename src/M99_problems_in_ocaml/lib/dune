@@ -1,9 +1,6 @@
 (library
- (name problem1)
+ (public_name M99_problems_in_ocaml)
+ (name lib)
  (inline_tests)
  (preprocess (pps ppx_inline_test)))
 
-(library
- (name problem2)
- (inline_tests)
- (preprocess (pps ppx_inline_test)))
