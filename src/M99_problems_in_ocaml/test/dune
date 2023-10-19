@@ -1,0 +1,3 @@
+(test
+ (name M99_problems_in_ocaml)
+ (libraries base stdio))

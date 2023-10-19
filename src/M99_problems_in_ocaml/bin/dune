@@ -1,0 +1,3 @@
+(executable
+ (public_name M99_problems_in_ocaml)
+ (name main))
