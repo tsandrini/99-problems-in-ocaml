@@ -7,12 +7,12 @@ let rec last_two lst =
 
 let last_two' lst =
   let length = List.length lst in
-  if length < 2 then None else Some (List.nth lst (length - 2), List.nth lst (length - 1));;
+  if length < 2 then None else Some (List.nth lst (length - 2), List.nth lst (length - 1))
 
 let rec last_two_sol = function
   | [] | [_] -> None
   | [x; y] -> Some (x,y)
-  | _ :: t -> last_two_sol t;;
+  | _ :: t -> last_two_sol t
 
 let%test "last_two - normal input" = last_two ["a"; "b"; "c"; "d"] = Some ("c", "d")
 let%test "last_two - partial wrong input" = last_two ["a"] = None

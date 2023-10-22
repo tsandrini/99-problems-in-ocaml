@@ -12,7 +12,7 @@ let last' lst =
 let rec last_sol = function
   | [] -> None
   | [x] -> Some x
-  | _ :: t -> last_sol t;;
+  | _ :: t -> last_sol t
 
 
 let%test "last - normal input" = last ["a" ; "b" ; "c" ; "d"] = Some "d"
